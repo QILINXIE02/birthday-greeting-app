@@ -39,7 +39,7 @@ const Countdown = () => {
 
   return (
     <div>
-      <h2>Countdown to Birthday</h2>
+      <h2>Countdown to Birthday Aug 27th! </h2>
       <p>{timeLeft.days} Days {timeLeft.hours} Hours {timeLeft.minutes} Minutes {timeLeft.seconds} Seconds</p>
     </div>
   );

@@ -12,6 +12,12 @@ const BirthdayMessage = () => {
     setSavedMessage(message);
   };
 
+  // const handleResetMessage = () => {
+  //   localStorage.removeItem('birthdayMessage');
+  //   setSavedMessage('');
+  //   setMessage('');
+  // };
+
   return (
     <div>
       <h2>Birthday Message</h2>
@@ -21,6 +27,7 @@ const BirthdayMessage = () => {
         placeholder="Write a birthday message..."
       ></textarea>
       <button onClick={handleSaveMessage}>Save Message</button>
+      {/* <button onClick={handleResetMessage}>Reset Message</button> */}
       {savedMessage && (
         <div>
           <h3>Saved Message:</h3>
