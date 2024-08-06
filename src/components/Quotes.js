@@ -14,10 +14,16 @@ const Quotes = () => {
     const interval = setInterval(() => {
       setCurrentQuote(quotes[Math.floor(Math.random() * quotes.length)]);
     }, 5000);
+
     return () => clearInterval(interval);
   }, [quotes]);
 
-  return <h2>{currentQuote}</h2>;
+  return (
+    <div>
+      <h2>Quote of the Moment</h2>
+      <p>{currentQuote}</p>
+    </div>
+  );
 };
 
 export default Quotes;
