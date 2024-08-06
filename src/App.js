@@ -1,23 +1,29 @@
-import logo from './logo.svg';
+// src/App.js
+import React from 'react';
+import DefaultPhoto from './components/DefaultPhoto';
+import BirthdayMessage from './components/BirthdayMessage';
+import GIFs from './components/GIFs';
+import Guestbook from './components/Guestbook';
+import Countdown from './components/Countdown';
+import BackgroundMusic from './components/BackgroundMusic';
+import ConfettiComponent from './components/Confetti';
+import Quotes from './components/Quotes';
+// import GiftCard from './components/GiftCard';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ConfettiComponent />
+      <h1>Happy Birthday!</h1>
+      <BackgroundMusic />
+      <DefaultPhoto />
+      <Quotes />
+      <BirthdayMessage />
+      <GIFs />
+      <Guestbook />
+      <Countdown />
+      {/* <GiftCard /> */}
     </div>
   );
 }

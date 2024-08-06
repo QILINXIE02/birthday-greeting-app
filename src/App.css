@@ -1,38 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
 .App {
   text-align: center;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #ff1493;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.default-photo {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin: 20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+textarea {
+  width: 100%;
+  max-width: 400px;
+  height: 100px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #ff1493;
   color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #ff69b4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gifs img {
+  width: 100px;
+  margin: 10px;
+}
+
+.guestbook-entries {
+  margin-top: 20px;
+}
+
+.guestbook-entries p {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.countdown span {
+  font-size: 20px;
+  color: #ff1493;
+  margin: 0 5px;
 }
