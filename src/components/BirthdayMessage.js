@@ -1,3 +1,4 @@
+// src/components/BirthdayMessage.js
 import React, { useState } from 'react';
 
 const BirthdayMessage = () => {
