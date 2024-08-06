@@ -13,9 +13,15 @@ const Countdown = () => {
   }, []);
 
   function calculateTimeLeft() {
-    const targetDate = new Date('2024-08-31T00:00:00');
-    const now = new Date();
-    const difference = targetDate - now;
+    // Define the target date in Pacific Time
+    const targetDatePacific = new Date('2024-08-27T00:00:00-07:00'); // Target date in PDT
+
+    // Get current time in Pacific Time
+    const nowPacific = new Date().toLocaleString('en-US', { timeZone: 'America/Los_Angeles' });
+    const now = new Date(nowPacific);
+
+    // Calculate the difference
+    const difference = targetDatePacific - now;
 
     let timeLeft = {};
     if (difference > 0) {
@@ -25,6 +31,8 @@ const Countdown = () => {
         minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((difference % (1000 * 60)) / 1000),
       };
+    } else {
+      timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
     }
     return timeLeft;
   }
