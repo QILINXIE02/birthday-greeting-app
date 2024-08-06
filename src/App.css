@@ -1,3 +1,4 @@
+/* App container styles */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -8,78 +9,114 @@ body {
   min-height: 100vh;
 }
 
+/* Main app container */
 .App {
   text-align: center;
   background: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 800px;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
   margin: 20px;
+  position: relative;
 }
 
+/* Heading styles */
 h1 {
   color: #ff1493;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
+/* Default photo styles */
 .default-photo {
   width: 100%;
   max-width: 400px;
   border-radius: 15px;
-  margin: 20px 0;
+  margin: 20px auto;
+  transform: rotate(-90deg);
+  transform-origin: center center;
+  display: block;
 }
 
+/* Textarea styles */
 textarea {
   width: 100%;
   max-width: 400px;
-  height: 100px;
-  border-radius: 5px;
+  height: 120px;
+  border-radius: 8px;
   border: 1px solid #ccc;
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
-  margin: 10px 0;
+  margin: 15px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+/* Button styles */
 button {
   background-color: #ff1493;
   color: white;
   border: none;
-  border-radius: 5px;
-  padding: 10px 20px;
+  border-radius: 8px;
+  padding: 12px 25px;
   cursor: pointer;
-  font-size: 16px;
-  margin-top: 10px;
+  font-size: 18px;
+  margin-top: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
   background-color: #ff69b4;
+  transform: scale(1.05);
+}
+
+/* GIF container styles */
+.gifs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px 0;
 }
 
 .gifs img {
-  width: 100px;
+  width: 120px;
   margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
+/* Guestbook entry styles */
 .guestbook-entries {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .guestbook-entries p {
   background: #f9f9f9;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 5px 0;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
 }
 
+/* Countdown styles */
 .countdown {
   display: flex;
   justify-content: center;
-  margin-top: 20px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.countdown p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff1493;
 }
 
 .countdown span {
-  font-size: 20px;
+  font-size: 22px;
   color: #ff1493;
-  margin: 0 5px;
+  margin: 0 10px;
 }
