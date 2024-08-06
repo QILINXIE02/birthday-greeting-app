@@ -5,7 +5,7 @@ import BirthdayMessage from './components/BirthdayMessage';
 import GIFs from './components/GIFs';
 import Guestbook from './components/Guestbook';
 import Countdown from './components/Countdown';
-import BackgroundMusic from './components/BackgroundMusic';
+// import BackgroundMusic from './components/BackgroundMusic';
 import ConfettiComponent from './components/Confetti';
 import Quotes from './components/Quotes';
 // import GiftCard from './components/GiftCard';
@@ -15,14 +15,14 @@ function App() {
   return (
     <div className="App">
       <ConfettiComponent />
-      <h1>Happy Birthday!</h1>
-      <BackgroundMusic />
+      <h1>Happy Birthday! RJ! </h1>
+      {/* <BackgroundMusic /> */}
+      <Countdown />
       <DefaultPhoto />
       <Quotes />
       <BirthdayMessage />
       <GIFs />
       <Guestbook />
-      <Countdown />
       {/* <GiftCard /> */}
     </div>
   );

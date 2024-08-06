@@ -3,7 +3,7 @@ import React, { useEffect, useState, useMemo } from 'react';
 
 const Quotes = () => {
   const quotes = useMemo(() => [
-    "Happy birthday to the best friend ever!",
+    "Happy birthday to the a good friend!",
     "Wishing you a day filled with love and joy!",
     "May all your birthday wishes come true!",
   ], []);
